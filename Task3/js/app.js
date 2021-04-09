@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     status.classList.add("img__win");
     status.innerText = "YOU WIN!!!"
     
-
     const createZombie = () => {
         if (currentZombieIndex > zombies.length - 1) {
             zombiesList.append(status);
@@ -83,20 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     };
     createZombie();
-
-    // let currentZombieStatus = document.querySelector(".zombies-status__current");
-    // let totalZombieStatus = document.querySelector(".zombies-status__total");
-
-    // totalZombieStatus.innerHTML = zombies.length;
-    // if(zombies[currentZombieIndex].Index++) {
-        
-    //     currentZombieIndex+1;
-       
-    //     currentZombieStatus = currentZombieIndex++;
-    // }
-    // currentZombieStatus.innerHTML = currentZombieIndex +1;
-
-    // status = new ChangeStatus();
     
     function changeStatus() {
         let currentElement = document.querySelector('.zombies-status__current');
