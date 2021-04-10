@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             zombie = new Zombie();
             zombie.render();
-
         }
     }
 
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         this.health = zombies[currentZombieIndex].health;
         this.currentHealth = zombies[currentZombieIndex].health;
         
-
         this.hitDamage = () => {
             this.currentHealth =  this.currentHealth - HIT_DAMAGE;
             this.updateHealth();
@@ -81,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
     };
+
     createZombie();
     
     function changeStatus() {
@@ -90,5 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
         totalElement.innerHTML = zombies.length;
         currentElement.innerHTML = currentZombieIndex + 1;
     };
+    
     changeStatus();
 });
